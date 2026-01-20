@@ -16,6 +16,7 @@ import StudentDetail from "./pages/StudentDetail";
 import StudentList from "./pages/StudentList";
 import LecturerDetail from "./pages/LecturerDetail";
 import LecturerList from "./pages/LecturerList";
+import LecturerComparison from "./pages/LecturerComparison";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -39,6 +40,7 @@ const App = () => (
           <Route path="/students" element={<StudentList />} />
           <Route path="/student/:id" element={<StudentDetail />} />
           <Route path="/lecturers" element={<LecturerList />} />
+          <Route path="/lecturer-comparison" element={<LecturerComparison />} />
           <Route path="/lecturer/:id" element={<LecturerDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
