@@ -13,6 +13,7 @@ import Analytics from "./pages/Analytics";
 import ETL from "./pages/ETL";
 import Reports from "./pages/Reports";
 import StudentDetail from "./pages/StudentDetail";
+import StudentList from "./pages/StudentList";
 import LecturerDetail from "./pages/LecturerDetail";
 import NotFound from "./pages/NotFound";
 
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/analytics" element={<Analytics />} />
           <Route path="/etl" element={<ETL />} />
           <Route path="/reports" element={<Reports />} />
+          <Route path="/students" element={<StudentList />} />
           <Route path="/student/:id" element={<StudentDetail />} />
           <Route path="/lecturer/:id" element={<LecturerDetail />} />
           <Route path="*" element={<NotFound />} />
