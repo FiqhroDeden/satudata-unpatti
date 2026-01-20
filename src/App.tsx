@@ -13,6 +13,7 @@ import Analytics from "./pages/Analytics";
 import ETL from "./pages/ETL";
 import Reports from "./pages/Reports";
 import StudentDetail from "./pages/StudentDetail";
+import LecturerDetail from "./pages/LecturerDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/etl" element={<ETL />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/student/:id" element={<StudentDetail />} />
+          <Route path="/lecturer/:id" element={<LecturerDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
